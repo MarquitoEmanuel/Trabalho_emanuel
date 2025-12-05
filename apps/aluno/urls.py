@@ -1,7 +1,6 @@
 from django.urls import path
-from apps.aluno.views import index, cadastro
+from apps.aluno.views import cadastro
 
 urlpatterns = [
-    path("", index, name="index"),
-    path("cadastro/", cadastro, name="cadastro")
+    path("cadastro/", cadastro, name="cadastro"),
 ]
